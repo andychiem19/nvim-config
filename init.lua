@@ -19,3 +19,11 @@ opt.termguicolors = true
 require("config.lazy")
 
 vim.cmd[[colorscheme tokyonight]]
+
+vim.lsp.config('slang-server', {
+  cmd = { 'slang-server' },
+  filetypes = { 'systemverilog', 'verilog' },
+  root_markers = { '.git', '*.sv', '*.v' },
+})
+
+vim.lsp.enable({ 'pyright', 'clangd', 'slang-server' })

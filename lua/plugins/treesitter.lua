@@ -13,7 +13,6 @@ return {
       "python",
       "c",
       "cpp",
-      "systemverilog",
     }
 
     ts.setup({})
